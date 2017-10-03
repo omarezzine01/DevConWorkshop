@@ -1,9 +1,8 @@
 package com.liferay.screenscordova;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.webkit.WebView;
-import com.liferay.mobile.screens.util.LiferayLogger;
+import android.support.v7.app.AppCompatActivity;
 import com.liferay.mobile.screens.web.WebListener;
 import com.liferay.mobile.screens.web.WebScreenlet;
 import com.liferay.mobile.screens.web.WebScreenletConfiguration;
@@ -17,9 +16,9 @@ public class HybridGalleryActivity extends AppCompatActivity implements WebListe
 
 		WebScreenlet webScreenlet = (WebScreenlet) findViewById(R.id.web_screenlet_gallery);
 
-		WebScreenletConfiguration configuration = new WebScreenletConfiguration
-				.Builder("/web/guest/gallery")
-				.addRawCss(R.raw.gallery_portlet_css, "gallery_portlet_css")
+		WebScreenletConfiguration configuration =
+			new WebScreenletConfiguration.Builder("/web/guest/gallery").addRawCss(
+				R.raw.gallery_portlet_css, "gallery_portlet_css")
 				.addRawJs(R.raw.gallery_portlet_js, "gallery_portlet_js")
 				.load();
 
@@ -37,7 +36,10 @@ public class HybridGalleryActivity extends AppCompatActivity implements WebListe
 
 	@Override
 	public void onScriptMessageHandler(String namespace, String body) {
-		LiferayLogger.d(namespace + body);
+		Intent intent = new Intent(this, GalleryDetailActivity.class);
+		intent.putExtra("imageUrl", body);
+
+		startActivity(intent);
 	}
 
 	@Override
