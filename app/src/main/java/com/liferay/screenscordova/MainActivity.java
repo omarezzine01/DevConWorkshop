@@ -1,6 +1,7 @@
 
 package com.liferay.screenscordova;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
 import android.widget.EditText;
@@ -26,6 +27,7 @@ public class MainActivity extends Activity implements LoginListener {
 	@Override
 	public void onLoginSuccess(User user) {
 		LiferayLogger.d("login correct");
+		startActivity(new Intent(this, SelectionActivity.class));
 	}
 
 	@Override

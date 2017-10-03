@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.liferay.screenscordova.NativeGalleryActivity"
+	>
+
+	<com.liferay.mobile.screens.imagegallery.ImageGalleryScreenlet
+		android:id="@+id/image_gallery_screenlet"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		app:repositoryId="@string/liferay_group_id"
+		app:folderId="49301"
+		/>
+
+</LinearLayout>
