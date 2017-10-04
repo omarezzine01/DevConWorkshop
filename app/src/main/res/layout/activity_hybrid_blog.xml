@@ -5,13 +5,11 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	tools:context="com.liferay.screenscordova.NativeBlogActivity"
+	tools:context="com.liferay.screenscordova.HybridBlogActivity"
 	>
 
-	<com.liferay.mobile.screens.blogs.BlogsEntryDisplayScreenlet
-		android:id="@+id/blog_display_screenlet"
-		app:classPK="50501"
-		app:className="com.liferay.blogs.kernel.model.BlogsEntry"
+	<com.liferay.mobile.screens.web.WebScreenlet
+		android:id="@+id/web_screenlet_blog"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		/>

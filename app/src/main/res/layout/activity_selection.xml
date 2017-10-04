@@ -32,4 +32,12 @@
 		android:text="Native blog"
 		/>
 
+	<Button
+		android:id="@+id/hybrid_blog_button"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_margin="10dp"
+		android:text="Hybrid blog"
+		/>
+
 </LinearLayout>

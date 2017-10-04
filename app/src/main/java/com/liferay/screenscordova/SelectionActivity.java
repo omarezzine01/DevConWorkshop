@@ -32,5 +32,12 @@ public class SelectionActivity extends AppCompatActivity {
 				startActivity(new Intent(SelectionActivity.this, NativeBlogActivity.class));
 			}
 		});
+
+		findViewById(R.id.hybrid_blog_button).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(SelectionActivity.this, HybridBlogActivity.class));
+			}
+		});
 	}
 }
