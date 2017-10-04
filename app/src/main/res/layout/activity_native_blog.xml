@@ -10,7 +10,7 @@
 
 	<com.liferay.mobile.screens.blogs.BlogsEntryDisplayScreenlet
 		android:id="@+id/blog_display_screenlet"
-		app:classPK="50501"
+		app:classPK="@string/blog_class_name"
 		app:className="com.liferay.blogs.kernel.model.BlogsEntry"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
