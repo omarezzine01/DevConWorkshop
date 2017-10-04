@@ -54,6 +54,8 @@
 		</activity>
 		<activity android:name=".GalleryDetailActivity">
 		</activity>
+		<activity android:name=".NativeBlogActivity">
+		</activity>
 	</application>
 
 </manifest>

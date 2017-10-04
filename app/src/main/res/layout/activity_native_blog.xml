@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.liferay.screenscordova.NativeBlogActivity"
+	>
+
+	<com.liferay.mobile.screens.blogs.BlogsEntryDisplayScreenlet
+		android:id="@+id/blog_display_screenlet"
+		app:classPK="50374"
+		app:className="com.liferay.blogs.kernel.model.BlogsEntry"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		/>
+
+</LinearLayout>
